@@ -9,6 +9,10 @@ hdfs://localhost:9000/Medicamentos/3t73-n4q9.csv.2
 - PySpark
 - Hadoop HDFS
 
+## Ejecución
+- Iniciar Hadoop y Spark
+- Ejecutar: python main.py
+
 ## Funcionalidades
 Carga de datos desde HDFS: Lectura de archivos CSV almacenados en el sistema distribuido HDFS con inferencia automática de esquema.
 
@@ -33,10 +37,6 @@ Carga de datos desde HDFS: Lectura de archivos CSV almacenados en el sistema dis
 - 🧹 **Optimización de visualización de resultados**  
   Uso de selección de columnas y formato de salida para mejorar la legibilidad de los datos.
 
-## Ejecución
-- Iniciar Hadoop y Spark
-Ejecutar:
-python main.py
 
 ## Resultados esperados
 - Visualización del esquema del dataset
