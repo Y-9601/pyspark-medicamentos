@@ -6,9 +6,9 @@ Python
 PySpark
 Hadoop HDFS
 
-Funcionalidades
-Lectura de datos desde HDFS
-Análisis de la estructura del dataset
-Generación de estadísticas
-Filtrado de medicamentos con precio > 5000
-Ordenamiento por precio descendente
+-Funcionalidades
+-Lectura de datos desde HDFS
+-Análisis de la estructura del dataset
+-Generación de estadísticas
+-Filtrado de medicamentos con precio > 5000
+-Ordenamiento por precio descendente
