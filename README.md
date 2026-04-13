@@ -14,35 +14,43 @@ hdfs://localhost:9000/Medicamentos/3t73-n4q9.csv.2
 - Ejecutar: python main.py
 
 ## Funcionalidades
-Carga de datos desde HDFS: Lectura de archivos CSV almacenados en el sistema distribuido HDFS con inferencia automática de esquema.
+**Carga de datos desde HDFS**  
+  El sistema lee el archivo CSV directamente desde HDFS, permitiendo trabajar con datos almacenados de forma distribuida.
 
-- 🧩 **Exploración de la estructura de datos**  
-  Visualización del esquema del dataset para identificar tipos de datos y columnas disponibles.
+**Exploración del dataset**  
+  Se analiza la estructura de los datos para entender qué información contiene cada columna y cómo está organizada.
 
-- 👀 **Vista previa de datos relevantes**  
-  Selección de columnas clave (`principio_activo`, `fabricante`, `precio_por_tableta`) para un análisis más claro.
+**Vista previa de la información**  
+  Se muestran algunos registros clave del dataset para tener una idea clara del contenido antes de analizarlo.
 
-- 📊 **Análisis estadístico descriptivo**  
-  Generación de métricas como promedio, mínimo, máximo y conteo para comprender el comportamiento del dataset.
+**Análisis estadístico**  
+  Se generan estadísticas básicas como promedios, valores mínimos y máximos para comprender mejor los datos.
 
-- 🚨 **Detección de medicamentos con precios elevados**  
-  Filtrado de registros donde el precio por tableta supera un umbral definido (5000).
+**Identificación de precios altos**  
+  Se filtran los medicamentos cuyo precio por tableta supera los 5000, con el fin de detectar valores elevados.
 
-- 📈 **Ordenamiento de datos por precio**  
-  Organización de los medicamentos de mayor a menor precio para identificar los más costosos.
+**Ordenamiento por precio**  
+  Los datos se organizan de mayor a menor precio para identificar fácilmente los medicamentos más costosos.
 
-- ⚠️ **Validación de columnas**  
-  Verificación de la existencia de columnas antes de realizar operaciones para evitar errores en ejecución.
+**Validación de datos**  
+  Se verifica que las columnas necesarias existan antes de realizar el análisis, evitando errores durante la ejecución.
 
-- 🧹 **Optimización de visualización de resultados**  
-  Uso de selección de columnas y formato de salida para mejorar la legibilidad de los datos.
-
+**Mejora en la visualización**  
+  Se seleccionan columnas específicas para presentar los resultados de forma más clara y ordenada.
 
 ## Resultados esperados
 - Visualización del esquema del dataset
 - Estadísticas descriptivas de los datos
 - Listado de medicamentos con precios altos
 - Ranking de medicamentos más costosos
+
+## Interpretación de resultados
+
+El análisis permitió identificar medicamentos con precios significativamente altos, lo que puede indicar:
+- Diferencias entre fabricantes
+- Medicamentos especializados
+- Posibles oportunidades de optimización de costos
+Este tipo de análisis es clave en entornos reales para la toma de decisiones en el sector salud.
 
 ## Conclusión
 El uso de PySpark permite procesar grandes volúmenes de datos de manera eficiente, facilitando el análisis de información en entornos distribuidos y demostrando su aplicabilidad en problemas reales del mundo empresarial
